@@ -1,4 +1,4 @@
-SRC	=	$(wildcar *.cpp)
+SRC	=	$(wildcard *.cpp)
 OBJ	=	$(SRC:.cpp=.o)
 
 NAME	=	megaphone
