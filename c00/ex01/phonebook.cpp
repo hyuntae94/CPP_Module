@@ -12,7 +12,7 @@ void    phoneBook::searchContact()
     int idx;
 
     std::cout<< "\n     index|first name| last name|  nickname|";
-    std::cout<< "\n-----------------------------------\n";
+    std::cout<< "\n--------------------------------------------\n";
     if (num > 7) _num = 8;
     else _num = num;
     for (int i = 0; i < _num; i++)
@@ -22,6 +22,8 @@ void    phoneBook::searchContact()
     }
     std::cout<<"index : ";
     std::cin>>idx;
+    if (std::cin.eof())
+        exit(-1);
     if (idx < 0 || num <= idx)
     {
         std::cout<<"\nwrong index!\n";

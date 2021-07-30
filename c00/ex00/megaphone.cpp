@@ -6,7 +6,7 @@
 /*   By: hyunkim <hyunkim@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/23 00:44:49 by hyunkim           #+#    #+#             */
-/*   Updated: 2021/07/23 01:25:46 by hyunkim          ###   ########.fr       */
+/*   Updated: 2021/07/30 22:13:21 by hyunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int     main(int argc, char *argv[])
         {
             for (int j = 0; argv[i][j]; j++)
                 std::cout<<uppercase(argv[i][j]);
-        }
+        }//trasnform!!
         std::cout<<"\n";
     }
 }

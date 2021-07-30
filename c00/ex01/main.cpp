@@ -11,6 +11,9 @@ int main()
         std::cout<<"only choose one(ADD, SEARCH, EXIT) : ";
         std::getline(std::cin, cmd);
         
+        if (std::cin.eof())
+            return (-1);
+
         if (cmd == "ADD")
             pb.addContact();
         else if (cmd == "SEARCH")
