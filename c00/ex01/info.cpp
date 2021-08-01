@@ -22,7 +22,6 @@ void info::previewInfo()
             if (str[i][j] >= 9 && str[i][j] <= 13)
                 str[i][j] = ' ';
         }
-        
         if (str[i].length() >= 10)
             str[i][9] = '.';
         
