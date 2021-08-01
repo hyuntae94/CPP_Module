@@ -32,7 +32,7 @@ void info::previewInfo()
 //ctrl+D -> 
 void info::viewInfo()
 {
-    std::cout<<"\n--------\n";
+    std::cout<< "\n--------------------------------------------\n";
     for (int i = 0; i < 5; i++)
         std::cout << s_cate[i] << " : " << content[i] << std::endl;
     std::cin.ignore();//idx번호와 함께 입력되는 개행문자 제거

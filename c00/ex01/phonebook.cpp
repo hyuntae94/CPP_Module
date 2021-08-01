@@ -20,13 +20,14 @@ void    phoneBook::searchContact()
         std::cout<<std::setw(10)<< i << "|";
         contact[i].previewInfo();
     }
-    std::cout<<"index : ";
+    std::cout<<"\nindex : ";
     std::cin>>idx;
     if (std::cin.eof())
         exit(-1);
     if (idx < 0 || num <= idx)
     {
         std::cout<<"\nwrong index!\n";
+        std::cout<< "\n--------------------------------------------\n";
         std::cin.ignore();//개행제거
     }
     else
