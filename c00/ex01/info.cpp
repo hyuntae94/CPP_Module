@@ -17,7 +17,7 @@ void info::previewInfo()
 
     for (int i = 0; i < 3; i++)
     { 
-        str[i] = content[i].substr(0, 10);
+        str[i] = content[i].substr(0, 10);//(시작인덱스, 가져올문자개수)
         for (int j = 0; j < 9; j++){
             if (str[i][j] >= 9 && str[i][j] <= 13)
                 str[i][j] = ' ';
