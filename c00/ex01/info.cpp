@@ -29,7 +29,7 @@ void info::previewInfo()
     }
     std::cout<<std::endl;
 }
-//ctrl+D -> 
+
 void info::viewInfo()
 {
     std::cout<< "\n--------------------------------------------\n";
