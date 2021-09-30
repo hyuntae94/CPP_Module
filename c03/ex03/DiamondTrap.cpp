@@ -3,20 +3,21 @@
 DiamondTrap::DiamondTrap()
 {
     std::cout << "Called DiamondTrap Default Constructor" << std::endl;
-    this->hitPoints = FragTrap::hitPoints;
-    this->energyPoints = ScavTrap::energyPoints;
-    this->attackDamage = FragTrap::attackDamage;
+    this->name = "Default";
+    this->FragTrap::hitPoints = 100;
+    this->ScavTrap::energyPoints = 50;
+    this->FragTrap::attackDamage = 30;
 }
 
-DiamondTrap::DiamondTrap(std::string param): ClapTrap(param + "_clap_name"), FragTrap(param), ScavTrap(param)
+DiamondTrap::DiamondTrap(std::string param): ClapTrap(param + "_clap_name")
 {
     this->name = param;
     std::cout << "DiamondTrap Created : " << this->name << std::endl;
-    this->hitPoints = FragTrap::hitPoints;
+    this->FragTrap::hitPoints = 100;
     std::cout <<"HitPoints Initialized " << this->hitPoints << std::endl;
-    this->energyPoints = ScavTrap::energyPoints;
+    this->ScavTrap::energyPoints = 50;
     std::cout <<"EnergyPoint Initialized " << this->energyPoints << std::endl;
-    this->attackDamage = FragTrap::attackDamage;
+    this->FragTrap::attackDamage = 30;
     std::cout << "AttackDamage Initialized " << this->attackDamage << std::endl
             << "----------------------------------------" << std::endl;
 }
@@ -46,5 +47,5 @@ void DiamondTrap::whoAmI()
 
 DiamondTrap::~DiamondTrap()
 {
-    std::cout << "Called Diamond Destructor" << std::endl;
+    std::cout << "Called DiamondTrap Destructor" << std::endl;
 }

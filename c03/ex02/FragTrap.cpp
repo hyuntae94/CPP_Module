@@ -8,7 +8,7 @@ FragTrap::FragTrap()
 FragTrap::FragTrap(std::string param)
 {
     this->name = param;
-    std::cout << "Created : " << this->name << std::endl;
+    std::cout << "FragTrap Created : " << this->name << std::endl;
     this->hitPoints = 100;
     std::cout <<"HitPoints Initialized " << this->hitPoints << std::endl;
     this->energyPoints = 100;
@@ -38,5 +38,5 @@ void FragTrap::highFivesGuys()
 
 FragTrap::~FragTrap()
 {
-    std::cout << "Called FragTrap Destrutor" << std::endl;
+    std::cout << "Called FragTrap Destructor" << std::endl;
 }

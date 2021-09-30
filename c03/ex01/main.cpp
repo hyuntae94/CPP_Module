@@ -15,4 +15,5 @@ int main(void)
     piter.beRepaired(10);
 
     hyuntae.guardGate();
+    return (0);
 }

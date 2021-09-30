@@ -2,7 +2,8 @@
 
 ClapTrap::ClapTrap()
 {
-    std::cout << "Called Default Construtor" << std::endl;
+    this->name = "Default";
+    std::cout << "Called ClapTrap Default Construtor" << std::endl;
     this->hitPoints = 10;
     std::cout <<"HitPoints Initialized " << this->hitPoints << std::endl;
     this->energyPoints = 10;
@@ -15,7 +16,7 @@ ClapTrap::ClapTrap()
 ClapTrap::ClapTrap(std::string name)
 {
     this->name = name;
-    std::cout << "Created : " << this->name << std::endl;
+    std::cout << "ClapTrap Created : " << this->name << std::endl;
     this->hitPoints = 10;
     std::cout <<"HitPoints Initialized " << this->hitPoints << std::endl;
     this->energyPoints = 10;
@@ -27,13 +28,15 @@ ClapTrap::ClapTrap(std::string name)
 
 ClapTrap::ClapTrap(const ClapTrap& param)
 {
-    std::cout << "Called Copy Constructor" << std::endl;
+    std::cout << "Called ClapTrap Copy Constructor" << std::endl;
     *this = param;
+    // std::cout << "----------------------------------------\n" 
+    //     << "ClapTrap " << &param << " Copied ---> " <<  this << std::endl;
 }
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& param)
 {
-    std::cout << "Called Assignment Operator" << std::endl;
+    std::cout << "Called ClapTrap " << "Assignment Operator" << std::endl;
     this->name = param.name;
     this->hitPoints = param.hitPoints;
     this->energyPoints = param.energyPoints;
@@ -61,5 +64,5 @@ void ClapTrap::beRepaired(unsigned int amount)
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "Destroyed" << this->name << std::endl;
+    std::cout << "Called ClapTrap "<< this->name << " Destructor "  << std::endl;
 }

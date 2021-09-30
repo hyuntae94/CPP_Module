@@ -8,7 +8,7 @@ ScavTrap::ScavTrap()
 ScavTrap::ScavTrap(std::string param)
 {
     this->name = param;
-    std::cout << "Created : " << this->name << std::endl;
+    std::cout << "ScavTrap Created : " << this->name << std::endl;
     this->hitPoints = 100;
     std::cout <<"HitPoints Initialized " << this->hitPoints << std::endl;
     this->energyPoints = 50;

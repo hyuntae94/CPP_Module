@@ -2,6 +2,7 @@
 
 ClapTrap::ClapTrap()
 {
+    this->name = "Default";
     std::cout << "ClapTrap Called Default Construtor" << std::endl;
     this->hitPoints = 10;
     std::cout <<"HitPoints Initialized " << this->hitPoints << std::endl;
@@ -15,7 +16,7 @@ ClapTrap::ClapTrap()
 ClapTrap::ClapTrap(std::string name)
 {
     this->name = name;
-    std::cout << "Created : " << this->name << std::endl;
+    std::cout << "ClapTrap Created : " << this->name << std::endl;
     this->hitPoints = 10;
     std::cout <<"HitPoints Initialized " << this->hitPoints << std::endl;
     this->energyPoints = 10;
@@ -101,5 +102,5 @@ unsigned int ClapTrap::getAttackDamage()
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "Called ClapTrap Destrutor"<< std::endl;
+    std::cout << "Called ClapTrap Destructor"<< std::endl;
 }
