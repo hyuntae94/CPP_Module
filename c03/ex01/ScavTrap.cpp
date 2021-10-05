@@ -2,13 +2,13 @@
 
 ScavTrap::ScavTrap()
 {
-    std::cout << "Called ScavTrap Default Constructor" << std::endl;
+    std::cout << "Called ScavTrap Default Constructor" << this << std::endl;
 }
 
 ScavTrap::ScavTrap(std::string param)
 {
     this->name = param;
-    std::cout << "ScavTrap Created : " << this->name << std::endl;
+    std::cout << "ScavTrap Created : " << this->name << this << std::endl;
     this->hitPoints = 100;
     std::cout <<"HitPoints Initialized " << this->hitPoints << std::endl;
     this->energyPoints = 50;
@@ -44,5 +44,5 @@ void ScavTrap::guardGate()
 
 ScavTrap::~ScavTrap()
 {
-    std::cout << "Called ScavTrap Destructor" << std::endl;
+    std::cout << "Called ScavTrap Destructor" << this << std::endl;
 }

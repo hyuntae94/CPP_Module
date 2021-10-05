@@ -14,12 +14,12 @@ public:
     DiamondTrap();
     DiamondTrap(std::string);
     DiamondTrap(const DiamondTrap&);
+    ~DiamondTrap();
 
     DiamondTrap& operator=(const DiamondTrap&);
     void attack(std::string const &);
 
     void whoAmI();
-    ~DiamondTrap();
 };
 
 #endif
